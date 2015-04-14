@@ -1,0 +1,119 @@
+body {
+	
+}
+
+#carouselMain {
+	border: 1px solid #666666;
+	height: 99%;
+}
+
+#carouselMain li.invisible {
+	display: none !important;
+}
+
+#carouselMain li.visible {
+	display: inline;
+}
+
+#carouselArrowSX {
+	float: left;
+	width: 6%;
+	display: inline-block;
+	/*margin-top:80px;*/
+	text-align: center;
+}
+
+.left-btn {
+	background-color: transparent;
+	background-image: url(../img/Caros-Freccia-Sx.png);
+	background-repeat: no-repeat;
+	border: 0;
+	box-shadow: none;
+	outline: 0;
+	width: 16px;
+	height: 16px;
+	margin-top: 80px;
+	cursor: pointer;
+}
+
+#carouselArrowDX {
+	float: right;
+	width: 6%;
+	text-align: center;
+	/*margin-top:80px;*/
+}
+
+.right-btn {
+	background-color: transparent;
+	background-image: url(../img/Caros-Freccia-Dx.png);
+	background-repeat: no-repeat;
+	border: 0;
+	box-shadow: none;
+	outline: 0;
+	width: 16px;
+	height: 16px;
+	margin-top: 80px;
+	cursor: pointer;
+}
+
+#carouselContent {
+	display: inline-block;
+	width: 88%;
+	margin-top: 4px;
+}
+
+.carouselContentImg {
+	float: left;
+	width: 65%;
+}
+
+.carouselContentBody {
+	float: left;
+	width: 30%;
+	margin-left: 8px;
+}
+
+.carouselContentTitle {
+	/*margin-top:8px;*/
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.carouselContentSubTitle {
+	margin-top: 8px;
+	font-style: italic;
+	color: #666666;
+	font-weight: bold;
+}
+
+.carouselContentText {
+	margin-top: 8px;
+}
+
+.button-text {
+	display: none;
+}
+
+#carouselLenght {
+	margin-top: 5px;
+	margin-left: 6%;
+}
+
+.jump-to {
+	background: #666666;
+	border: 1px solid black;
+	height: 11px;
+	margin: 0 1px;
+	overflow: visible;
+	padding: 0;
+	width: 11px;
+	cursor: pointer;
+}
+
+.current-jump-to {
+	background-color: #009CD9;
+}
+
+li.liElement {
+	border-bottom-style: none !important;
+}

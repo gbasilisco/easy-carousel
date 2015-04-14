@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<!-- use JQUERY lib -->
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
+	type="text/javascript"></script>
+
+<!-- JS for carousel -->
+<script src="js/carousel.js" type="text/javascript"></script>
+
+<!-- CSS for carousel -->
+<link rel="stylesheet" href="css/carousel.css" />
+
+<title>Welcome to easy carousel</title>
+
+</head>
+<body>
+
+	<div id="carouselMain">
+
+		<div id="carouselArrowSX">
+			<button type="button" class="btn left-btn">
+				<span class="button-text">Back</span>
+			</button>
+		</div>
+
+		<div id="carouselContent">
+			<ul>
+
+				<!-- START Regenerate n time the li section -->
+
+				<li class="visible liElement" tabindex="0">
+					<div class="carouselContentImg">
+						<img src="#" alt="Test Image 1" />
+					</div>
+
+					<div class="carouselContentBody">
+
+						<div class="carouselContentTitle">Title</div>
+
+						<div class="carouselContentSubTitle">Sub Title</div>
+
+						<div class="carouselContentText">Lorem ipsumLorem ipsumLorem
+							ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</div>
+					</div>
+				</li>
+
+				<!-- END Regenerate n time the li section -->
+
+				<!-- START li example -->
+
+				<li class="invisible liElement" tabindex="1">
+					<div class="carouselContentImg">
+						<img src="#" alt="Test Image 2" />
+					</div>
+
+					<div class="carouselContentBody">
+
+						<div class="carouselContentTitle">Title1</div>
+
+						<div class="carouselContentSubTitle">Sub Title1</div>
+
+						<div class="carouselContentText">1Lorem ipsumLorem
+							ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum
+							Lorem ipsum</div>
+					</div>
+				</li>
+
+				<li class="invisible liElement" tabindex="2">
+					<div class="carouselContentImg">
+						<img src="#" alt="Test Image 3" />
+					</div>
+
+					<div class="carouselContentBody">
+
+						<div class="carouselContentTitle">Title2</div>
+
+						<div class="carouselContentSubTitle">Sub Title2</div>
+
+						<div class="carouselContentText">2Lorem ipsumLorem
+							ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum
+							Lorem ipsum</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+
+		<!-- END li example -->
+
+		<div id="carouselArrowDX">
+			<button type="button" class="btn right-btn">
+				<span class="button-text">Next</span>
+			</button>
+		</div>
+
+		<div id="carouselLenght">
+			<!-- START Regenerate n time the button section -->
+			<button type="button" class="jump-to current-jump-to" id="jumpTo-0"></button>
+			<button type="button" class="jump-to" id="jumpTo-1"></button>
+			<button type="button" class="jump-to" id="jumpTo-2"></button>
+			<!-- END Regenerate n time the button section -->
+		</div>
+
+	</div>
+</body>
+</html>
