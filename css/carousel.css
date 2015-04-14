@@ -3,8 +3,9 @@ body {
 }
 
 #carouselMain {
-	border: 1px solid #666666;
-	height: 99%;
+	border: 0px solid #666666;
+	height: 768px;
+	width:1200px;
 }
 
 #carouselMain li.invisible {
@@ -25,7 +26,7 @@ body {
 
 .left-btn {
 	background-color: transparent;
-	background-image: url(../img/Caros-Freccia-Sx.png);
+	background-image: url(../img/sx.png);
 	background-repeat: no-repeat;
 	border: 0;
 	box-shadow: none;
@@ -45,7 +46,7 @@ body {
 
 .right-btn {
 	background-color: transparent;
-	background-image: url(../img/Caros-Freccia-Dx.png);
+	background-image: url(../img/dx.png);
 	background-repeat: no-repeat;
 	border: 0;
 	box-shadow: none;
@@ -70,7 +71,9 @@ body {
 .carouselContentBody {
 	float: left;
 	width: 30%;
-	margin-left: 8px;
+	margin-left: 20px;
+	margin-top:15px;
+	color:white;
 }
 
 .carouselContentTitle {
@@ -82,7 +85,8 @@ body {
 .carouselContentSubTitle {
 	margin-top: 8px;
 	font-style: italic;
-	color: #666666;
+	/*color: #666666;*/
+	color:#009CD9;
 	font-weight: bold;
 }
 
@@ -96,7 +100,7 @@ body {
 
 #carouselLenght {
 	margin-top: 5px;
-	margin-left: 6%;
+	margin-left: 9%;
 }
 
 .jump-to {
