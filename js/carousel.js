@@ -8,12 +8,11 @@ $(document).ready(function() {
 
 		for (var i = 0; i < testimonialElements.length; i++) {
 
-			// alert("CHECK:"+check);
 			var element = testimonialElements.eq(i);
 
 			if (i == testimonialElements.length - 1) {
 				// alert('I'm into reset');
-				var liInitial = $('[tabindex=0]');
+				var liInitial = $("#tabindex0");
 				liInitial.removeClass('invisible');
 				liInitial.addClass('visible');
 				element.removeClass('visible');
@@ -47,7 +46,7 @@ $(document).ready(function() {
 
 				var x = i + 1;
 
-				var currentLi = $('[tabindex="' + x + '"]')
+				var currentLi = $("#tabindex" + x);
 				// alert(currentLi.attr('tabindex')+' test');
 
 				element.removeClass('visible');
@@ -110,7 +109,7 @@ $(document).ready(function() {
 				if (x < 0) {
 					// alert('I'm into last element');
 					var newTabIndex = testimonialElements.length - 1;
-					var liInitial = $('[tabindex="' + newTabIndex + '"]')
+					var liInitial = $("#tabindex" + newTabIndex); 
 					liInitial.removeClass('invisible');
 					liInitial.addClass('visible');
 					element.removeClass('visible');
@@ -141,7 +140,7 @@ $(document).ready(function() {
 
 				}
 
-				var currentLi = $('[tabindex="' + x + '"]')
+				var currentLi = $("#tabindex" + x);
 				// alert('current tabindex'+currentLi.attr('tabindex'));
 
 				element.removeClass('visible');
@@ -212,10 +211,13 @@ $(document).ready(function() {
 			element.removeClass('visible');
 			element.addClass('invisible');
 
-			if (element.attr('tabindex') == newPosition) {
-				element.removeClass('invisible');
-				element.addClass('visible');
-			}
+			 var res2 = element.attr('id').split("tabindex");
+	         var newPosition2 = res2[1];
+	         
+	         if (newPosition2 == newPosition) {
+	                element.removeClass('invisible');
+	                element.addClass('visible');
+	         }
 
 		}
 	});
